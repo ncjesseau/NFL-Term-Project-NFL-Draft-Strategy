@@ -23,3 +23,9 @@ Hadley, B. (2021). Redefining draft pick valuation in the National Football Leag
 National Football League. (2023). NFL draft rules and procedures. https://operations.nfl.com/football-ops/nfl-draft/the-rules-of-the-draft/
 
 Graziano, D. (2023, April 25). How the Eagles’ roster-building philosophy keeps them competitive. ESPN. https://www.espn.com/nfl/story/_/id/36291388/how-eagles-roster-building-philosophy-keeps-them-competitive
+
+Datasets
+
+https://www.kaggle.com/datasets/dubradave/nfl-draft-history-1990-present
+
+https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023
