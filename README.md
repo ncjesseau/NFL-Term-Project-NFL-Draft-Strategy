@@ -1,5 +1,7 @@
 # NFL-Term-Project-NFL-Draft-Strategy
 
+Title: Roster Building Under Constraint: Draft Strategy and Competitive Context in the NFL
+
 Should an NFL General Manager prioritize long-term positional value in the draft or prioritize immediate on-field improvement in response to short-term competitive pressure?
 
 
@@ -13,8 +15,3 @@ The core tension facing a general manager lies between two competing draft philo
 
 This decision matters because draft outcomes create feedback effects that extend beyond a single season. Draft strategy influences player development pathways, salary cap flexibility, team performance, and ultimately the job security of decision-makers themselves. Choices made under short-term pressure can reinforce cycles of instability, while value-based strategies may enable sustained competitiveness over time. By examining this tradeoff, the project seeks to clarify how competitive context shapes drafting behavior and how these decisions affect long-term team outcomes.
 
-Datasets
-
-https://www.kaggle.com/datasets/dubradave/nfl-draft-history-1990-present
-
-https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023
