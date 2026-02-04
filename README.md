@@ -2,7 +2,7 @@
 
 Title: Roster Building Under Constraint: Draft Strategy and Competitive Context in the NFL
 
-Should an NFL General Manager prioritize long-term positional value in the draft or prioritize immediate on-field improvement in response to short-term competitive pressure?
+Should an NFL General Manager respond to short-term competitive pressure by prioritizing high-impact, high-variance positions in the draft, or follow a value-based strategy that maximizes long-term roster stability?
 
 
 The NFL Draft forces general managers to balance long-term roster value against short-term pressure to improve team performance. This project examines how competitive context influences draft strategy and how prioritizing immediate results versus long-term positional value affects team stability and success.
