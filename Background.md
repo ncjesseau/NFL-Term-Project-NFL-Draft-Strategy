@@ -1,3 +1,5 @@
+# Background
+
 The NFL Draft represents one of the most consequential strategic decision points for professional football franchises. Each year, 32 teams select eligible college players across seven rounds in a system intended to distribute new talent and promote competitive balance. Draft order is primarily determined by the previous season’s performance, with weaker teams receiving earlier selections under the assumption that access to higher-rated prospects improves their chances of recovery.
 
 Despite this seemingly straightforward structure, the decision facing an NFL general manager (GM) is complex and deeply uncertain. Teams must determine not only which players to select, but whether draft capital should be used to address short-term competitive weaknesses or allocated toward players and positions that offer greater long-term value. Draft picks function simultaneously as immediate inputs into team performance and as long-term investments in roster stability, making the time horizon of the decision a central source of tension.
@@ -12,7 +14,7 @@ A wide range of stakeholders are affected by draft strategy decisions. General m
 
 Historically, teams have relied on a combination of traditional scouting, positional heuristics, and increasingly, data-driven analysis. While modern analytics and machine learning models aim to optimize draft outcomes across multiple dimensions, uncertainty remains an inherent feature of the process. This persistent uncertainty is what makes the tradeoff between short-term competitive pressure and long-term positional value a central and enduring challenge in NFL draft strategy.
 
-References
+## References
 
 Berri, D. J., Brook, S. L., & Schmidt, M. B. (2011). Drafting efficiency in the National Football League. Journal of Productivity Analysis, 35(1), 37–49. https://doi.org/10.1007/s11123-010-0194-1
 
@@ -24,7 +26,7 @@ National Football League. (2023). NFL draft rules and procedures. https://operat
 
 Graziano, D. (2023, April 25). How the Eagles’ roster-building philosophy keeps them competitive. ESPN. https://www.espn.com/nfl/story/_/id/36291388/how-eagles-roster-building-philosophy-keeps-them-competitive
 
-Datasets
+## Datasets
 
 https://www.kaggle.com/datasets/dubradave/nfl-draft-history-1990-present
 
