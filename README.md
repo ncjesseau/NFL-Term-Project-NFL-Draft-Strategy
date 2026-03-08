@@ -77,6 +77,20 @@ This visualization builds on the previous graph by isolating quarterbacks from t
 
 Quarterback selections show the largest swings in both positive and negative changes in team win percentage, indicating a significantly higher level of risk compared to other premium positions. While successful quarterback picks can lead to substantial improvements in team performance, unsuccessful selections can coincide with sharp declines. In contrast, other high-value positions such as edge rusher, offensive tackle, and cornerback tend to produce more moderate and consistent changes in team performance. For a decision-maker, this distinction highlights that while premium positions generally provide stable returns, quarterback selections represent a uniquely high-risk, high-reward decision within first-round drafting.
 
+### Change in Team Win Percentage After a Top 10 Pick
+<img width="1316" height="888" alt="image" src="https://github.com/user-attachments/assets/e3712fa0-7047-4eac-9f5c-97aad8c44e48" />
+
+This visualization applies the same analysis as the earlier win-percentage charts but focuses only on teams selecting within the top 10 picks of the first round. Because these picks are typically held by weaker teams seeking immediate improvement, the chart helps assess whether selecting a high-value position leads to more consistent short-term gains compared to lower-value selections. Across the time period, teams selecting high-value positions show relatively moderate and stable changes in win percentage, generally remaining closer to neutral or modest improvement. In contrast, teams selecting lower-value positions display much larger fluctuations, including several of the most extreme positive and negative changes.
+
+In the context of the project’s central question, this pattern is particularly meaningful because top-10 teams are most likely to be operating under significant short-term competitive pressure. The results suggest that selecting premium positions early in the draft may provide more predictable improvements in team performance, while using top picks on lower-value positions introduces greater volatility. This supports the broader argument that prioritizing high-impact positions—especially when draft capital is highest—may represent a more stable strategic approach for general managers attempting to accelerate team improvement.
+
+### Change in Team Win Percentage After a Top 10 Pick (QB Isolated)
+<img width="1402" height="896" alt="image" src="https://github.com/user-attachments/assets/16eda7fa-fc0e-4a6b-8ac1-dff1a0708e4a" />
+This visualization extends the top-10 pick analysis by separating quarterbacks from the rest of the high-value position group. Once quarterbacks are isolated, the most notable pattern is that teams selecting high-value non-quarterback positions show the greatest volatility in year-over-year win percentage, with both the largest positive spike and the sharpest decline in the chart. By comparison, the quarterback line appears more moderate, fluctuating around the middle without reaching the same extremes. Low-value positions also remain volatile, but not to the same degree as the non-quarterback high-value group.
+
+In the context of the project, this complicates the idea that quarterback picks are always the riskiest top-10 decision. For teams drafting in the top 10, the biggest short-term swings in performance appear to come more often from selecting premium non-quarterback positions such as edge rusher, offensive tackle, cornerback, or wide receiver. This suggests that even when general managers avoid the unique pressure of drafting a quarterback, using elite draft capital on other premium positions can still produce highly uneven short-term results, reinforcing how uncertain it is to draft for immediate improvement at the top of the board.
+
+
 
 
 
