@@ -18,3 +18,13 @@ This decision matters because draft outcomes create feedback effects that extend
 [Read more](Background.md)
 
 ![Casual Loop Diagram](img/CLD.png)
+
+# Exploratory Data Analysis
+
+## Weighted NFL Draft Picks by Position (Adjusted for On-Field Positional Demand)
+<img width="1374" height="889" alt="image" src="https://github.com/user-attachments/assets/f1c5be7a-c936-4102-a645-19bf4e2027a1" />
+
+This visualization establishes the positional baseline of the draft dataset by showing how frequently each position appears after adjusting for the number of players typically on the field at that position. Rather than relying on raw draft counts alone, the metric uses a weighted calculation where the total number of drafted players at a position is divided by the number of players typically required at that position in a starting lineup. For reference, the weighting logic is based on the following assumptions: QB = 1, RB = 2, WR = 3, TE = 1, OT = 2, IOL = 3, EDGE = 2, IDL = 2, LB = 2, CB = 3, S = 2, and K, P, and LS = 1 each. This means positions with multiple on-field starters, such as cornerback (3) or wide receiver (3), have their total counts divided by three, while single-position roles like quarterback or tight end remain unchanged.
+
+This adjustment matters for the decision-maker because it separates true positional investment from simple roster volume effects. For example, teams naturally draft more cornerbacks or wide receivers because more of them are required on the field at once. By normalizing for this, the visualization highlights which positions receive disproportionately high draft attention relative to their on-field demand. In the context of the research question, this helps a general manager understand which positions the league consistently prioritizes when building a roster. If high-impact positions such as EDGE or CB still rank highly even after normalization, it may indicate teams are willing to invest heavily in volatile, game-changing roles. Conversely, if more stable positions maintain strong representation, it may support a longer-term, value-based drafting strategy focused on roster stability rather than short-term competitive pressure.
+
