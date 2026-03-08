@@ -28,11 +28,44 @@ This visualization establishes the positional baseline of the draft dataset by s
 
 This adjustment matters for the decision-maker because it separates true positional investment from simple roster volume effects. For example, teams naturally draft more cornerbacks or wide receivers because more of them are required on the field at once. By normalizing for this, the visualization highlights which positions receive disproportionately high draft attention relative to their on-field demand. In the context of the research question, this helps a general manager understand which positions the league consistently prioritizes when building a roster. If high-impact positions such as EDGE or CB still rank highly even after normalization, it may indicate teams are willing to invest heavily in volatile, game-changing roles. Conversely, if more stable positions maintain strong representation, it may support a longer-term, value-based drafting strategy focused on roster stability rather than short-term competitive pressure.
 
-### First Round NFL Draft Picks by Position
-<img width="1381" height="892" alt="image" src="https://github.com/user-attachments/assets/97fa0e37-452b-44d5-be3a-e2a0917fc9fd" />
+### First Round NFL Draft Picks by Position (Non-Weighted)
+<img width="1368" height="882" alt="image" src="https://github.com/user-attachments/assets/0b7c5b8a-f245-4c22-9532-427f8a372335" />
 
-This visualization applies the same weighted positional methodology as the previous chart but focuses only on first-round draft selections. By isolating Round 1 picks, the graph highlights which positions teams prioritize when the stakes and expectations are highest, while normalization removes simple roster-volume effects.
+his visualization shows the raw distribution of first-round draft selections by position. Unlike the earlier weighted chart, this graph presents the unadjusted count of players selected in the first round, highlighting where teams most frequently allocate their most valuable draft capital. Because the first round represents the highest-stakes portion of the draft, these selections provide a clear signal of which positions teams believe have the greatest potential impact on winning.
 
-For a decision-maker, the most striking feature is the large jump in quarterback selections relative to other positions. Even after weighting, quarterbacks appear far more frequently in the first round than any other position, suggesting teams are often willing to invest their most valuable draft capital in a high-impact but high-variance role. At the same time, the prominence of positions such as edge rusher, offensive tackle, and cornerback indicates that teams also consistently prioritize positions that can influence games while supporting long-term roster stability. This distribution highlights the balance between pursuing immediate impact and maintaining a strong positional foundation when making early draft decisions.
+For a decision-maker, this chart reinforces the positional hierarchy commonly discussed in traditional football roster-building theory. Positions such as edge rusher, wide receiver, cornerback, offensive tackle, and quarterback appear most frequently in the first round, suggesting that teams consistently prioritize roles capable of creating significant on-field impact. This supports the earlier classification of these positions as high-value roles and suggests that general managers often respond to competitive pressure by targeting players at positions believed to offer the greatest competitive advantage.
+
+## Average Player Value by Position (Weighted AV)
+<img width="1374" height="884" alt="image" src="https://github.com/user-attachments/assets/e47b0848-bed5-4e22-bedd-74ed524ce258" />
+
+This visualization shows the average Weighted Approximate Value (AV) produced by players at each position across the dataset. Weighted AV is a metric derived from Pro Football Reference’s Approximate Value statistic, which estimates a player’s overall seasonal contribution to team success using box score production and team performance. In this analysis, AV values are averaged by position to compare the typical impact different position groups provide over time.
+
+For a decision-maker, this chart helps identify which positions tend to deliver the greatest overall value once players reach the league. Quarterbacks clearly produce the highest average value, reinforcing why teams are willing to take significant risks drafting them early. However, positions such as offensive tackle, interior offensive line, edge rusher, and interior defensive line also generate consistently high value, suggesting that investing in foundational positions can provide reliable long-term returns. This helps frame the trade-off between pursuing high-impact but volatile positions and building roster stability through consistently productive roles.
+
+### Average Player Value by Position in Round 1
+<img width="1371" height="890" alt="image" src="https://github.com/user-attachments/assets/b9998747-2ca5-478b-a6da-5be8e4ac3460" />
+
+This visualization shows the average Weighted Approximate Value (AV) produced by players selected in the first round, grouped by position. Weighted AV serves as a measure of a player’s overall on-field contribution, allowing for comparison of how much value first-round selections tend to generate across different positions. By focusing only on first-round picks, the chart highlights which positions deliver the greatest average return when teams invest their most valuable draft capital.
+
+For a decision-maker, this chart provides insight into whether early draft investments align with the value those positions ultimately produce. Quarterbacks again generate the highest average value among first-round selections, reinforcing why teams are willing to prioritize them despite the associated risk. However, several other positions, including interior offensive line, running back, offensive tackle, and defensive line roles, also produce strong average value. This suggests that while teams often prioritize high-impact positions early in the draft, multiple foundational positions can also generate significant returns, providing an important perspective when balancing immediate impact with long-term roster stability.
+
+### Average Player Value by Position in Rounds 2-7
+<img width="1378" height="886" alt="image" src="https://github.com/user-attachments/assets/648b9b02-38a8-498c-a530-449f6eef3682" />
+
+This visualization shows the average Weighted Approximate Value (AV) produced by players selected in Rounds 2–7. Compared with the first-round chart, the overall values are significantly lower, reflecting the expected drop in average impact as the draft progresses. While quarterbacks produced the highest average value among first-round selections, their average contribution falls closer to the middle of the distribution in later rounds. Instead, positions such as interior offensive line, offensive tackle, and interior defensive line generate the highest average value outside of the first round.
+
+For a decision-maker, this comparison highlights an important shift in where value tends to emerge across the draft. Early rounds are dominated by quarterbacks and other premium positions because of their potential to dramatically influence team success. However, in later rounds, more stable and structurally important positions along the offensive and defensive line tend to produce stronger average returns. This suggests that while teams often prioritize high-impact positions early in response to competitive pressure, long-term roster stability and value may increasingly come from identifying productive players at foundational positions deeper in the draft.
+
+### Average Weighted Approximate Value by Draft Round and Position
+<img width="1369" height="894" alt="image" src="https://github.com/user-attachments/assets/a981465f-38e6-47c8-8d6c-33e8b8a3e20f" />
+
+This visualization shows how the average Weighted Approximate Value (AV) for each position changes across every round of the draft. Rather than comparing positions at a single draft stage, the chart illustrates how the expected value of players declines as the draft progresses and whether certain positions retain value deeper into the draft than others.
+
+For a decision-maker, the key insight is the difference in how quickly positional value declines after the first round. While most positions show a steady drop in average value as rounds progress, the decline is particularly sharp for quarterbacks, highlighting the limited success of later-round quarterback selections. In contrast, several line positions, particularly along the offensive and defensive interior, maintain relatively stable value deeper into the draft. This suggests that while early picks may be best used to pursue positions with the potential to produce elite impact, later rounds may provide more dependable returns when focused on positions that consistently contribute to roster depth and structural stability.
+
+
+
+
+
 
 
