@@ -63,6 +63,22 @@ This visualization shows how the average Weighted Approximate Value (AV) for eac
 
 For a decision-maker, the key insight is the difference in how quickly positional value declines after the first round. While most positions show a steady drop in average value as rounds progress, the decline is particularly sharp for quarterbacks, highlighting the limited success of later-round quarterback selections. In contrast, several line positions, particularly along the offensive and defensive interior, maintain relatively stable value deeper into the draft. This suggests that while early picks may be best used to pursue positions with the potential to produce elite impact, later rounds may provide more dependable returns when focused on positions that consistently contribute to roster depth and structural stability.
 
+## Change in Team Win Percentage After First-Round Draft Picks by Positional Value Tier
+<img width="1395" height="906" alt="image" src="https://github.com/user-attachments/assets/592656aa-be50-40f3-aad8-b7516590eab7" />
+
+This visualization compares the year-over-year change in team win percentage for teams that used a first-round pick on a high-value position (QB, CB, WR, EDGE, OT) versus those that selected a lower-value position. Across the time period, teams drafting high-value positions tend to show smaller fluctuations and remain closer to neutral or modest improvements in win percentage. In contrast, teams selecting lower-value positions display larger swings, including both the strongest improvements and the sharpest declines. For a decision-maker, this suggests that drafting high-value positions in the first round may lead to more stable and predictable outcomes, while selecting lower-value positions appears to be associated with greater variability in team performance.
+
+However, an important caveat is that stronger teams may have more flexibility in their draft decisions. Teams already performing well face less short-term competitive pressure and may be more willing to draft positions based on long-term roster balance rather than immediate impact. As a result, some of the volatility seen among teams selecting lower-value positions may reflect differences in team context rather than the positional value alone.
+
+###  Change in Team Win Percentage After First-Round Draft Picks by Positional Value Tier (QB Isolated)
+<img width="1405" height="895" alt="image" src="https://github.com/user-attachments/assets/bc782ebb-986a-4de4-8035-e111827082b6" />
+
+This visualization builds on the previous graph by isolating quarterbacks from the broader high-value positional category. In the earlier visualization, high-value positions appeared to produce relatively stable changes in win percentage compared to lower-value selections. However, once quarterbacks are separated from the group, it becomes clear that they are responsible for much of the volatility previously hidden within the high-value category.
+
+Quarterback selections show the largest swings in both positive and negative changes in team win percentage, indicating a significantly higher level of risk compared to other premium positions. While successful quarterback picks can lead to substantial improvements in team performance, unsuccessful selections can coincide with sharp declines. In contrast, other high-value positions such as edge rusher, offensive tackle, and cornerback tend to produce more moderate and consistent changes in team performance. For a decision-maker, this distinction highlights that while premium positions generally provide stable returns, quarterback selections represent a uniquely high-risk, high-reward decision within first-round drafting.
+
+
+
 
 
 
