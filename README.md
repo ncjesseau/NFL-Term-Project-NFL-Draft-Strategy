@@ -28,3 +28,11 @@ This visualization establishes the positional baseline of the draft dataset by s
 
 This adjustment matters for the decision-maker because it separates true positional investment from simple roster volume effects. For example, teams naturally draft more cornerbacks or wide receivers because more of them are required on the field at once. By normalizing for this, the visualization highlights which positions receive disproportionately high draft attention relative to their on-field demand. In the context of the research question, this helps a general manager understand which positions the league consistently prioritizes when building a roster. If high-impact positions such as EDGE or CB still rank highly even after normalization, it may indicate teams are willing to invest heavily in volatile, game-changing roles. Conversely, if more stable positions maintain strong representation, it may support a longer-term, value-based drafting strategy focused on roster stability rather than short-term competitive pressure.
 
+### First Round NFL Draft Picks by Position
+<img width="1381" height="892" alt="image" src="https://github.com/user-attachments/assets/97fa0e37-452b-44d5-be3a-e2a0917fc9fd" />
+
+This visualization applies the same weighted positional methodology as the previous chart but focuses only on first-round draft selections. By isolating Round 1 picks, the graph highlights which positions teams prioritize when the stakes and expectations are highest, while normalization removes simple roster-volume effects.
+
+For a decision-maker, the most striking feature is the large jump in quarterback selections relative to other positions. Even after weighting, quarterbacks appear far more frequently in the first round than any other position, suggesting teams are often willing to invest their most valuable draft capital in a high-impact but high-variance role. At the same time, the prominence of positions such as edge rusher, offensive tackle, and cornerback indicates that teams also consistently prioritize positions that can influence games while supporting long-term roster stability. This distribution highlights the balance between pursuing immediate impact and maintaining a strong positional foundation when making early draft decisions.
+
+
