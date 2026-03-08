@@ -1,9 +1,10 @@
-Data Preparation and Wrangling Summary
+# Data Preparation and Wrangling Summary
 
-Overview
+**Overview**
+
 Prior to analysis, the NFL draft dataset required several cleaning and standardization steps to ensure positional consistency and compatibility across files. The primary issues encountered involved inconsistent position labeling, mismatched team identifiers, and formatting inconsistencies between datasets.
 
-Issues Encountered in Raw Data
+**Issues Encountered in Raw Data**
 
 Player positions were frequently listed using broad categories (e.g., LB, DL, OL, DB) rather than specific on-field roles.
 
@@ -13,7 +14,7 @@ Team names differed between the Draft dataset and the Team Stats dataset (e.g., 
 
 The Season field in the Draft dataset was formatted as a whole number rather than a date format, which created compatibility issues for analysis and visualization tools.
 
-Cleaning Actions Taken
+**Cleaning Actions Taken**
 
 Position Standardization
 
@@ -27,15 +28,15 @@ Reviewed 110 players labeled as OL and reassigned 71 to specific positions (G, C
 
 The remaining 39 offensive linemen were left labeled as OL due to the absence of positional usage data.
 
-Team Name Standardization
+**Team Name Standardization**
 
 Standardized team identifiers across datasets by converting full team names to abbreviated forms to match the Team Stats file (e.g., New England Patriots → NWE).
 
-Date Formatting
+**Date Formatting**
 
 Converted the Season variable in the Draft dataset from a numeric value to a date format to ensure compatibility with analysis tools and enable time-based visualization.
 
-Assumptions and Decisions
+**Assumptions and Decisions**
 
 Pass-rushing linebackers were reclassified as OLB or DE when their usage aligned with edge rushing roles.
 
