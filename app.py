@@ -18,7 +18,24 @@ def load_data():
 df = load_data()
 
 # Clean column names (fix Excel spacing issues)
-df.columns = [col.strip().lower() for col in df.columns]
+df.columns = [col.strip().lower().replace("-", "_") for col in df.columns]
+def map_position(pos):
+    if pos in ["c", "g"]:
+        return "IOL"
+    elif pos in ["de", "olb"]:
+        return "EDGE"
+    elif pos in ["s", "saf"]:
+        return "S"
+    elif pos in ["nt", "dt"]:
+        return "IDL"
+    elif pos in ["ilb", "lb"]:
+        return "LB"
+    elif pos in ["t", "ot"]:
+        return "T"
+    else:
+        return pos.upper()  # keep original but clean
+
+df["position_group"] = df["position"].str.lower().apply(map_position)
 
 # -----------------------
 # TITLE + DESCRIPTION
@@ -36,7 +53,7 @@ Use the filters on the left to explore performance, efficiency, and reliability 
 # -----------------------
 st.sidebar.header("Filters")
 
-positions = sorted(df["position"].dropna().unique())
+positions = sorted(df["position_group"].dropna().unique())
 selected_positions = st.sidebar.multiselect(
     "Select positions",
     positions,
@@ -59,7 +76,7 @@ metric = st.sidebar.selectbox(
 # FILTER DATA
 # -----------------------
 filtered_df = df[
-    (df["position"].isin(selected_positions)) &
+    (df["position_group"].isin(selected_positions)) &
     (df["round"].isin(selected_rounds))
 ].copy()
 
@@ -87,7 +104,7 @@ st.markdown("---")
 st.subheader("1. Average Performance by Position")
 
 position_summary = (
-    filtered_df.groupby("position", as_index=False)
+    filtered_df.groupby("position_group", as_index=False)
     .agg(
         avg_w_av=("w_av", "mean"),
         avg_value_per_pick=("value_per_pick", "mean"),
@@ -99,10 +116,10 @@ position_summary = (
 )
 
 chart1 = alt.Chart(position_summary).mark_bar().encode(
-    x=alt.X("position:N", sort="-y", title="Position"),
+    x=alt.X("position_group:N", sort="-y", title="Position"),
     y=alt.Y("avg_w_av:Q", title="Average Weighted AV"),
     tooltip=[
-        "position",
+        "position_group",
         "avg_w_av",
         "avg_value_per_pick",
         "avg_games",
@@ -125,15 +142,15 @@ st.markdown("---")
 st.subheader("2. Position Value by Draft Round")
 
 round_position_summary = (
-    filtered_df.groupby(["round", "position"], as_index=False)
+    filtered_df.groupby(["round", "position_group"], as_index=False)
     .agg(avg_metric=(metric, "mean"))
 )
 
 chart2 = alt.Chart(round_position_summary).mark_rect().encode(
     x=alt.X("round:O", title="Round"),
-    y=alt.Y("position:N", title="Position"),
+    y=alt.Y("position_group:N", title="Position"),
     color=alt.Color("avg_metric:Q", title=f"Avg {metric}"),
-    tooltip=["round", "position", "avg_metric"]
+    tooltip=["round", "position_group", "avg_metric"]
 ).properties(height=450)
 
 st.altair_chart(chart2, use_container_width=True)
@@ -152,10 +169,10 @@ st.subheader("3. Reliability vs Value")
 chart3 = alt.Chart(filtered_df).mark_circle(size=70).encode(
     x=alt.X("games:Q", title="Games Played"),
     y=alt.Y("w_av:Q", title="Weighted AV"),
-    color=alt.Color("position:N", title="Position"),
+    color=alt.Color("position_group:N", title="Position"),
     tooltip=[
         "player_name",
-        "position",
+        "position_group",
         "round",
         "pick",
         "games",
@@ -195,7 +212,7 @@ decision_df = df[df["round"] == decision_round].copy()
 
 if decision_goal == "Maximize value":
     decision_summary = (
-        decision_df.groupby("position", as_index=False)
+        decision_df.groupby("position_group", as_index=False)
         .agg(score=("w_av", "mean"))
         .sort_values("score", ascending=False)
     )
@@ -203,7 +220,7 @@ if decision_goal == "Maximize value":
 
 elif decision_goal == "Find efficient picks":
     decision_summary = (
-        decision_df.groupby("position", as_index=False)
+        decision_df.groupby("position_group", as_index=False)
         .agg(score=("value_per_pick", "mean"))
         .sort_values("score", ascending=False)
     )
@@ -211,7 +228,7 @@ elif decision_goal == "Find efficient picks":
 
 else:
     decision_summary = (
-        decision_df.groupby("position", as_index=False)
+        decision_df.groupby("position_group", as_index=False)
         .agg(score=("games", "mean"))
         .sort_values("score", ascending=False)
     )
