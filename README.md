@@ -90,6 +90,51 @@ This visualization extends the top-10 pick analysis by separating quarterbacks f
 
 In the context of the project, this complicates the idea that quarterback picks are always the riskiest top-10 decision. For teams drafting in the top 10, the biggest short-term swings in performance appear to come more often from selecting premium non-quarterback positions such as edge rusher, offensive tackle, cornerback, or wide receiver. This suggests that even when general managers avoid the unique pressure of drafting a quarterback, using elite draft capital on other premium positions can still produce highly uneven short-term results, reinforcing how uncertain it is to draft for immediate improvement at the top of the board.
 
+## NFL Draft Strategy Dashboard — User Guide
+
+### How to Use the App
+
+1. **Select Filters (Left Sidebar)**
+
+   * Choose one or more **positions** (e.g., EDGE, QB, WR)
+   * Select **draft rounds** to compare early vs. late picks
+   * Choose a **metric** for analysis
+
+2. **View Overview Metrics**
+
+   * The top section updates dynamically:
+
+     * Total players
+     * Average performance (Weighted AV)
+     * Average games and seasons started
+
+3. **Analyze Position Performance**
+
+   * The chart compares average outcomes across positions
+   * Use it to identify which positions generate the most value under different conditions
+
+4. **Interpret Results**
+
+   * Higher **Weighted AV** = stronger overall performance
+   * Higher **value_per_pick** = greater efficiency relative to draft position
+   * More games/seasons = higher reliability
+
+---
+
+### Important Caveat on *value_per_pick*
+
+The **value_per_pick** metric measures efficiency by dividing player performance by draft position. While useful for identifying “high-value” picks, it has important limitations:
+
+* It can **inflate the value of late-round picks**, since even modest performance divided by a large pick number appears efficient
+* It may **undervalue early picks**, which are expected to produce higher absolute performance
+* It should be interpreted as a measure of **relative efficiency**, not overall player quality
+
+As a result, value_per_pick should be used alongside metrics like **Weighted AV** and career length to form a more balanced evaluation.
+
+### Link
+https://nfl-term-project-nfl-draft-strategy-3i3ua5j6k6pbosyy4pzzem.streamlit.app/
+
+
 ## Conclusion
 
 Across the visualizations, teams consistently used early draft capital on positions traditionally viewed as premium, especially quarterback, edge, offensive tackle, wide receiver, and cornerback. That pattern is strongest in the first-round count data, which suggests that NFL decision-makers do generally behave as though these positions offer the greatest strategic upside. However, when actual player value is examined through Weighted Approximate Value, the picture becomes more mixed. Quarterbacks clearly stand out as the highest-value position on average, especially in the first round, which helps explain why teams remain willing to accept the risk of drafting them early. Outside of quarterback, though, the strongest average value returns were more often seen from positions such as offensive tackle, interior offensive line, edge, and interior defensive line. Cornerback in particular was drafted like a premium position, but it did not produce comparably high average AV in the charts, which weakens the idea that draft behavior always aligns with realized roster value.
