@@ -134,6 +134,18 @@ As a result, value_per_pick should be used alongside metrics like **Weighted AV*
 ### Link
 https://nfl-term-project-nfl-draft-strategy-3i3ua5j6k6pbosyy4pzzem.streamlit.app/
 
+### Implications for Decision
+## Implications for the Decision
+
+The analysis presented in the dashboard highlights clear patterns in how draft value is distributed across position groups and draft rounds. Early-round selections consistently produce the highest absolute performance, as measured by Weighted Approximate Value (W_AV), particularly at premium positions such as QB, EDGE, and WR. However, when considering efficiency through value_per_pick, several non-premium positions—such as IOL and certain defensive groups—emerge as strong contributors relative to their draft cost, especially in later rounds. This suggests a tradeoff between maximizing total impact and optimizing value relative to draft position.
+
+Based on this evidence, strategies that prioritize high-impact positions early while targeting efficient, lower-cost positions in later rounds appear more promising. Focusing exclusively on early-round “best player available” approaches may overlook opportunities to extract surplus value in later rounds, while overly prioritizing efficiency risks undervaluing the importance of securing elite talent early in the draft.
+
+There are, however, key uncertainties that remain. The value_per_pick metric can overstate the efficiency of late-round selections, and positional groupings, while useful for clarity, may obscure important differences within roles. Additionally, the analysis is based on historical data and does not account for evolving positional importance or team-specific needs.
+
+These findings suggest that an optimal draft strategy should balance early-round investment in high-impact positions with a targeted approach to value extraction in later rounds. Milestone 4 will build on this by developing a more concrete recommendation that integrates both performance and efficiency considerations into a cohesive draft strategy.
+
+
 
 ## Conclusion
 
