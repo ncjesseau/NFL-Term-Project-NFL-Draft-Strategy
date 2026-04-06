@@ -185,6 +185,9 @@ Future work should focus on strengthening these areas. Incorporating contract an
 
 Finally, implementing a formal risk analysis to measure variance by position would directly address the central decision question
 
+## Reflection
+
+One of the most valuable aspects of this project was the opportunity to develop technical skills in an area I am personally interested in. Working with NFL draft data made the process more engaging and helped me stay invested through the more challenging parts of data cleaning, wrangling, and analysis. In particular, I gained a stronger understanding of how to structure messy, real-world data, standardize variables, and build a dataset that could actually support meaningful analysis. This was a key learning moment, as I realized how much of data work happens before any visualization or conclusions. What surprised me most was how inconclusive some of the results were. While I expected clearer support for either a high-impact or value-based strategy, the findings showed that the decision is much more context-dependent. This reinforced the idea that data can inform decisions, but rarely provides a single definitive answer. If I were to approach the project again, I would place more emphasis on incorporating risk and financial data earlier in the process. In terms of skills, I developed stronger data wrangling, analytical thinking, and the ability to translate technical findings into clear, decision-oriented insights.
 
 
 
