@@ -135,7 +135,6 @@ As a result, value_per_pick should be used alongside metrics like **Weighted AV*
 https://nfl-term-project-nfl-draft-strategy-3i3ua5j6k6pbosyy4pzzem.streamlit.app/
 
 ### Implications for Decision
-## Implications for the Decision
 
 The analysis presented in the dashboard highlights clear patterns in how draft value is distributed across position groups and draft rounds. Early-round selections consistently produce the highest absolute performance, as measured by Weighted Approximate Value (W_AV), particularly at premium positions such as QB, EDGE, and WR. However, when considering efficiency through value_per_pick, several non-premium positions—such as IOL and certain defensive groups—emerge as strong contributors relative to their draft cost, especially in later rounds. This suggests a tradeoff between maximizing total impact and optimizing value relative to draft position.
 
