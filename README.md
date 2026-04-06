@@ -147,13 +147,43 @@ These findings suggest that an optimal draft strategy should balance early-round
 
 
 
-## Conclusion
+## Summary of Analysis
 
 Across the visualizations, teams consistently used early draft capital on positions traditionally viewed as premium, especially quarterback, edge, offensive tackle, wide receiver, and cornerback. That pattern is strongest in the first-round count data, which suggests that NFL decision-makers do generally behave as though these positions offer the greatest strategic upside. However, when actual player value is examined through Weighted Approximate Value, the picture becomes more mixed. Quarterbacks clearly stand out as the highest-value position on average, especially in the first round, which helps explain why teams remain willing to accept the risk of drafting them early. Outside of quarterback, though, the strongest average value returns were more often seen from positions such as offensive tackle, interior offensive line, edge, and interior defensive line. Cornerback in particular was drafted like a premium position, but it did not produce comparably high average AV in the charts, which weakens the idea that draft behavior always aligns with realized roster value.
 
 The team-performance analysis makes the findings even less definitive. Changes in win percentage after first-round selections were inconsistent, and the relationship between positional tier and short-term improvement was not stable enough to support a clear causal claim. In some views, high-value selections appeared to produce steadier outcomes than low-value picks, but in other cases, especially among top-10 picks, high-value non-quarterback positions produced some of the largest swings in performance. Isolated quarterback results also did not consistently show the most extreme short-term volatility. Taken together, this suggests that while positional value may shape draft strategy, it does not translate neatly into immediate team success.
 
 Overall, the EDA is best read as suggestive rather than conclusive. It does support the idea that quarterbacks hold special strategic value and that offensive and defensive line positions often provide strong long-term returns. But it does not prove that responding to short-term competitive pressure by drafting premium positions will reliably improve team performance, nor does it prove that a purely value-based strategy guarantees more stable outcomes. There are simply too many other factors at play, including roster quality, coaching, injuries, scheme fit, free agency, development, and the cumulative effect of multiple draft classes, to isolate team performance to one or two draft selections. The strongest takeaway is not that one strategy definitively wins, but that the draft reflects a tension between perceived positional value and the much messier reality of how value is actually realized on the field.
+
+## Reccomendations
+
+Based on the analysis conducted, the recommended approach is to prioritize a value-based draft strategy that maximizes long-term roster stability, rather than consistently responding to short-term competitive pressure by targeting high-impact, high-variance positions. While premium positions such as quarterback, edge rusher, and wide receiver offer substantial upside, the evidence suggests that a disciplined, value-oriented approach produces more reliable and sustainable returns over time.
+
+The findings indicate that although quarterbacks generate the highest average value, particularly in the first round, they also carry significant variability and risk. This makes them effective in specific contexts but not as a default strategy. More consistent value emerges from foundational positions such as offensive line and defensive line, particularly in later rounds. These positions tend to produce steadier performance outcomes and contribute to overall team stability. Additionally, the analysis shows that teams already heavily invest in high-impact positions early in the draft, reinforcing that market competition for these players is high and may lead to overvaluation under pressure. As a result, reacting to short-term needs by targeting these positions can reduce overall draft efficiency.
+
+Importantly, value differs by draft round. Early rounds may justify selective investment in high-impact roles, particularly when a clear franchise quarterback opportunity exists. However, in rounds two through seven, the data supports prioritizing positions that deliver consistent returns, such as interior offensive line and defensive line. This reinforces the case for a balanced, long-term strategy rather than a reactive, short-term approach.
+
+That said, this recommendation is not absolute. There are conditions under which a high-variance strategy may be appropriate. Teams lacking a franchise quarterback, or those in a clear competitive window with strong supporting rosters, may rationally prioritize high-impact positions to accelerate contention. Additionally, variability in player evaluation, injuries, and team-specific scheme fit introduce uncertainty into all draft decisions. The analysis is also limited by the use of historical performance metrics, which may not fully capture contextual factors such as coaching, development systems, or off-field considerations.
+
+To operationalize this recommendation, the General Manager should adopt a hybrid draft framework. This includes maintaining a value-based board as the primary decision tool, while allowing for targeted deviations in early rounds when high-impact opportunities align with team needs. The team should also invest in improving positional valuation models, incorporating both performance consistency and upside risk. Strengthening scouting integration with analytics will further support more informed decision-making.
+
+Finally, additional data would strengthen this analysis. Incorporating contract value, positional salary trends, and team success metrics such as wins above replacement would provide a more complete picture of draft value. More granular player development data could also help distinguish between intrinsic player value and organizational influence.
+
+Overall, a value-based strategy offers a more reliable path to sustained success, while still allowing flexibility to capitalize on high-impact opportunities when appropriate.
+
+## Limitations and Future Work
+
+This analysis offers a structured approach to evaluating draft strategy, but several limitations should be acknowledged. First, the model relies primarily on Weighted Approximate Value (wAV) as a measure of player performance. While useful for cross-positional comparison, wAV is an aggregate metric that may not fully capture context-specific contributions such as scheme fit, leadership, or situational impact. Certain positions, particularly along the offensive line, may be undervalued due to the limitations of this metric.
+
+Second, positional groupings were standardized during data cleaning (e.g., combining guards and centers into interior offensive line), which improves consistency but reduces granularity. This may obscure meaningful differences within position groups and limit the precision of conclusions.
+
+Third, the analysis does not account for team context. Player outcomes are influenced by coaching, surrounding talent, and organizational stability, meaning performance cannot be fully attributed to draft strategy alone. Similarly, the absence of contract and salary data limits the ability to assess true value, as draft efficiency is closely tied to cost relative to performance.
+
+Additionally, while the project frames certain positions as high-variance, this variability is not formally modeled. As a result, the tradeoff between upside and consistency is discussed conceptually rather than quantitatively.
+
+Future work should focus on strengthening these areas. Incorporating contract and salary data would enable a surplus value framework, aligning performance with financial efficiency. Adding team-level outcomes, such as win percentage or playoff appearances, would help link draft decisions to organizational success. More granular positional breakdowns and player development trajectories could improve analytical precision.
+
+Finally, implementing a formal risk analysis to measure variance by position would directly address the central decision question
 
 
 
