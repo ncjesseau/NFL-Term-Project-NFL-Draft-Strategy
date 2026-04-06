@@ -19,6 +19,15 @@ This decision matters because draft outcomes create feedback effects that extend
 
 ![Casual Loop Diagram](img/CLD.png)
 
+## Table of Contents
+
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [NFL Draft Strategy Dashboard — User Guide](#nfl-draft-strategy-dashboard--user-guide)
+- [Summary of Analysis](#summary-of-analysis)
+- [Reccomendations](#reccomendations)
+- [Limitations and Future Work](#limitations-and-future-work)
+- [Reflection](#reflection)
+
 # Exploratory Data Analysis
 
 ## Weighted NFL Draft Picks by Position (Adjusted for On-Field Positional Demand)
